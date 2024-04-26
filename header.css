@@ -1,0 +1,108 @@
+header{
+    height: 20vh;
+    z-index: 1000;
+}
+
+
+
+.main{
+    position: relative;
+    background: url(img/background.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:120vh;
+    width: 100vw;
+    opacity: 1;
+}
+.top-div{
+    height: 6vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000042;
+}
+.top-div div{
+    margin: 0 40px;
+}
+
+.top-div div h4{
+    font-weight: 300;
+    color: white;
+}
+.top-div a{
+    text-decoration: none;
+}
+
+.insta a{
+    text-decoration: none;
+    margin-top: 8px;
+}
+ion-icon{
+    color: white;
+    padding: 4px
+}
+
+.header-div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 16vh;
+    width: 100%;
+    position: fixed;
+}
+
+.logo-div img{
+    height: 80px;
+}
+
+.nav-div{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.nav-div li{
+    padding: 30px;
+    border-radius: 10px;
+    color: #131335;
+    font-weight: 700;
+    position: relative;
+}
+.nav-div ul{
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-div li a{
+    text-decoration: none;
+    /* position: relative; */
+    color: #fff;
+    text-shadow: #131335 1px 2px 1px ;
+}
+
+.home::after{
+    content: "";
+    position: absolute;
+    left: 34px;
+    bottom: 5px;
+    width: 36px;
+    height: 3px;
+    background-color: #131335;
+}
+
+.home,.about,.services{
+    cursor: pointer;
+}
+
+.line{
+    width: 90%;
+    margin: 0 5%;
+}
+.scrolled {
+    background-color: black;
+    top: 0;
+    transition: background-color 0.5s ease;
+    opacity: 1;
+
+}

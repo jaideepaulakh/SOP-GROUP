@@ -1,0 +1,43 @@
+
+.over-img{
+    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 2px;
+    margin: 60px 100px;
+    height: 60vh;
+    width: 35vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.over-img img{
+    max-height: 40vh;
+}
+
+.over-img h1{
+    font-weight: 500;
+    margin-top: -20px;
+    color: #131335;
+}
+.over-img button{
+    width: 20vw;
+    height: 5vh;
+    border-radius: 10px;
+    border: none;
+    margin: 20px 20px;
+    background-color: #131335;
+    color: #FFF;
+    font-weight: 600;
+}
+
+.over-img button:hover{
+    background-color: #FFF;
+    color: #131335;
+    cursor: pointer;
+    opacity: 1;
+    z-index: 10;
+}
+
+
+
+
