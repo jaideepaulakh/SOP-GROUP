@@ -1,6 +1,7 @@
 header{
     height: 20vh;
     z-index: 1000;
+    width: 100%;
 }
 
 
@@ -11,7 +12,7 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     height:120vh;
-    width: 100vw;
+    width: 100%;
     opacity: 1;
 }
 .top-div{
@@ -20,6 +21,7 @@ header{
     justify-content: center;
     align-items: center;
     background-color: #00000042;
+    width: 100%;
 }
 .top-div div{
     margin: 0 40px;
@@ -31,6 +33,7 @@ header{
 }
 .top-div a{
     text-decoration: none;
+
 }
 
 .insta a{
@@ -47,7 +50,7 @@ ion-icon{
     justify-content: space-between;
     align-items: center;
     height: 16vh;
-    width: 100%;
+    width: 100vw;
     position: fixed;
 }
 
@@ -56,7 +59,7 @@ ion-icon{
 }
 
 .nav-div{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     justify-content: left;
     align-items: center;
@@ -64,7 +67,6 @@ ion-icon{
 
 .nav-div li{
     padding: 30px;
-    border-radius: 10px;
     color: #131335;
     font-weight: 700;
     position: relative;
@@ -80,16 +82,12 @@ ion-icon{
     color: #fff;
     text-shadow: #131335 1px 2px 1px ;
 }
-
-.home::after{
-    content: "";
-    position: absolute;
-    left: 34px;
-    bottom: 5px;
-    width: 36px;
-    height: 3px;
-    background-color: #131335;
+.nav-div ion-icon{
+    font-size: 45px;
+    padding: 10px 25px;
+    display: none;
 }
+
 
 .home,.about,.services{
     cursor: pointer;
@@ -106,3 +104,110 @@ ion-icon{
     opacity: 1;
 
 }
+.menu-icon-container{
+    width: 20px ;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    z-index: 10001;
+    display: none;
+
+}
+.menu-icon{
+    position: relative;
+    width: 100%;
+
+}
+.line1,
+.line2{
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    background-color: white;;
+    z-index:99999;
+}
+.line1{
+    top: -4px;
+
+}
+.line2{
+    top: 4px;
+}
+.nav-desktop2{
+   margin-bottom: -10vh;
+}
+
+
+@media (max-width:600px){
+    .menu-icon-container{
+        right: 5vw;
+        top: 5vh;
+        position: absolute;
+        display: block;
+        margin: 2vw;
+    }
+    .menu-icon-container.active .menu-icon .line1{
+        top: 0;
+        transform: rotateZ(45deg);
+    }
+    .menu-icon-container.active .menu-icon .line2{
+        top: 0;
+        transform: rotateZ(-45deg);
+    }
+    .top-div{
+        flex-direction: column;
+        height: 10vh;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .header-div{
+        background-color: black;
+        height: 10vh;
+        position: fixed;
+        z-index: 2;
+
+
+    }
+    .nav-div ul{
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        position: relative;
+        margin: 0;
+        padding: 0;
+        top: 22vh;
+        margin-left: -31vw;
+        width: 100vw;
+        height: 40vh;
+        background-color: black;
+        z-index: 3;
+        
+    }
+    .nav-div li{
+        margin: 0;
+        padding: 0;
+        border-top: 1px solid white;
+        /* border-bottom: 1px solid white; */
+        border-radius: none;
+        padding: 2vh ;
+        width: 100vw;
+        z-index: 100;
+        overflow: hidden;
+    }
+    
+    .nav-div ul.active-nav {
+        display: flex;
+
+    }
+    .nav-div ion-icon{
+        display: block;
+
+    }
+    .insta a{
+        margin: 0;
+    }
+    }
+    
+
