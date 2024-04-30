@@ -31,9 +31,10 @@
     border-radius: 10px;
     border: none;
     margin: 20px 20px;
-    background-color: #0d0d25;
+    background-color: #17173f;
     color: #FFF;
     font-weight: 600;
+    transition-duration: 0.5s;
 }
 
 .over-img button:hover{
@@ -59,7 +60,47 @@
     
 }
 
+/* home content ------------------- */
 
+.intro-home{
+    color: #17173f;
+    background-color: #FFF;
+    padding: 5vw;
+    margin-top: 2vh;
+    border-top: 2px solid #17173f;
+    /* border-radius: 5px; */
+    /* box-shadow: 3px 4px 5px white; */
+
+}
+
+.intro-home h1{
+    padding: 10px 0;
+}
+
+.intro-home p{
+    font-size: 18px;
+    line-height: 35px;
+    margin: 15px 0;
+
+}
+.intro-home button{
+    background-color: #17173f;
+    color: white;
+    border-radius: 10px;
+    width: 200px;
+    height: 35px;
+    margin: 20px 0;
+    border: 1px solid white;
+    transition-duration: 0.5s;
+}
+.intro-home button:hover{
+    background-color: #FFF;
+    color: #17173f;
+    border: 1px solid #17173f;
+}
+.intro-home a{
+    text-decoration: none;
+}
 
 
 
