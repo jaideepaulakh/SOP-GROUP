@@ -1,70 +1,139 @@
+.footer, .footer-container{
+    display: flex;
+    width: 100%;
+    bottom: 0;
+}
+
 .footer{
-    width: 100%;
-    margin: 10vh 9vw;
-    display: flex;
-    color: white;
+    
+    color: #17173f;
+    
+}
+.footer-container{
     flex-direction: column;
-    background-color: #0d0d25;
+    
+    gap: 20px;
+    background: linear-gradient(to bottom right, #95B590, #868698);
 }
-.footer-top{
-    display: flex;
+.footer-container:hover{
+    background: linear-gradient(to bottom right, #868698,#95B590);
+    
+}
+.footer-copyright{
+    margin: 5vh 0vw;
     width: 100%;
-    align-items: center;
+    
 }
-.footer-top div{
+.footer-copyright h4{
+    font-weight: 300;
+    text-align: center;
+}
+
+.footer-sections{
+    margin: 5vh 4vw;
+    width: 25%;
     display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
-.logo img{
-    max-height: 30vh;
-}
-.footer ion-icon{
+.footer-sections h4{
     font-size: 20px;
 }
 
-.contact-footer{
-    justify-content: space-between;
-    width: 100vw;
-    padding: 0 20vw;
+.footer-sections h6{
+    font-size: 15px;
+    font-weight: 500;
 }
 
-.bottom-footer{
-    width: 100%;
-    padding: 20px;
+.footer-social ion-icon{
+    font-size: 25px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+.footer-social a{
+    text-decoration: none;
+    color: #17173f;
+}
 
+.footer-contact div{
+    display: flex;
+}
+
+.footer-contact ion-icons{
+    font-size: 12px;
+    
+}
+.footer-contact div{
+    width: 100%;
+}
+
+.footer-drive button{
+    width: 14vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(to bottom right, #17173f, #535766);
+    color: #FFF;
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+
+.footer-drive button:hover{
+    background: linear-gradient(to bottom right, #17173f, #95B590);
+}
+
+.footer-quote button{
+    width: 14vw;
+    height: 6vh;
+    border-radius: 10px;
+    border: none;
+    background: linear-gradient(to bottom right, #17173f, #535766);
+    color: #FFF;
+    font-weight: 600;
+    transition-duration: 0.5s;
+}
+
+.footer-quote button:hover{
+    background: linear-gradient(to bottom right, #17173f, #95B590);
 }
 
 @media (max-width:600px){
-    .footer{
+    .drivers{
         flex-direction: column;
-        margin: 0;
-        /* background-color: aqua; */
-
-    }
-    .footer-top{
-        flex-direction: column;
-    }
-    .contact-footer{
-        flex-direction: column;
-    }
-    .contact-footer div{
-        margin: 10px;
-    }
-
-    .bottom-footer{
-        width: 100%;
-        padding: 20px;
-        border-top: 1px solid white;
-        display: flex;
-        align-items: center;
         justify-content: center;
-    
     }
-    .footer-hr{
-        display: none;
-        
+    .drivers h1{
+        font-size: 40px;
     }
-}
+    .drivers button{
+        min-width: 40vw;
+    }
+    .intro-home{
+        flex-direction: column;
+    }
+    .intro-left , .intro-right{
+        width: 100%;
+    }
 
-@media (max-width:1024px){
-    
+    .footer-container, .footer{
+        flex-direction: column;
+    }
+    .footer-sections{
+        width: 100%;
+        align-items: center;
+        border-top: 1px solid white;
+        margin: 0;
+        padding: 20px;
+    }
+    .footer-contact div{
+        width: auto;
+    }
+    .footer-drive button{
+        min-width: 40vw;
+        height: 3vh;
+    }
+    .footer-quote button{
+        min-width: 30vw;
+        height: 3vh;
+    }
 }
