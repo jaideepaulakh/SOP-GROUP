@@ -1,0 +1,71 @@
+.driver-form-div{
+    width: 100vw;
+    /* height: 100vh; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+
+}
+.driver-form{
+    width: 40vw;
+    margin: 10vh 10vw;
+}
+.driver-form button{
+    width: 50%;
+    height: 5vh;
+    margin: 10px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #17173f, #535766);
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+
+}
+.driver-form1{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+    padding: 10px;
+
+}
+.driver-form1 div{
+    margin: 1vh;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.driver-form1 label{
+    width: 50%;
+}
+.driver-form1 .form-dropdown , .driver-form1 input{
+    width: 10vw;
+    height: 4vh;
+    border-radius: 5px;
+    border: 1px solid ;
+    background-color: rgb(226, 226, 226);
+}
+    
+.driver-form h1{
+    text-align: center;
+    padding: 10px;
+    background: linear-gradient(to bottom right, #95B590, #868698);
+
+}
+
+@media (max-width:600px){
+    .driver-form{
+        width: 90%;
+    }
+    .driver-form1 div{
+        flex-direction: column;
+
+    }
+    .driver-form1 label , .driver-form1 input , .driver-form1 .form-dropdown{
+        width: 100%;
+    }
+}

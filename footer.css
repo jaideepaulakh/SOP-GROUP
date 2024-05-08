@@ -76,6 +76,7 @@
     color: #FFF;
     font-weight: 600;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .footer-drive button:hover{
@@ -91,6 +92,7 @@
     color: #FFF;
     font-weight: 600;
     transition-duration: 0.5s;
+    cursor: pointer;
 }
 
 .footer-quote button:hover{

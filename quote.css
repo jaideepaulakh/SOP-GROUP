@@ -1,0 +1,57 @@
+.quote-form-div{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10vh;
+    color: #0d0d25;
+}
+
+.quote-form1{
+    display: flex;
+
+}
+.quote-form1 div{
+    display: flex;
+    flex-direction: column;
+}
+/* 
+.quote-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.quote-form1 input{
+    height: 6vh;
+    width: 40vw;
+    margin: 2vh;
+}
+.quote-form1 textarea{
+    height: 16vh;
+    width: 40vw;
+    margin: 2vh;
+}
+
+.quote-form h2{
+    margin: 2vh;
+}
+
+.quote-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2vh;
+}
+.quote-button button{
+    height: 6vh;
+    width: 20vw;
+    background: linear-gradient(to bottom right, #17173f, #535766);
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+
+}

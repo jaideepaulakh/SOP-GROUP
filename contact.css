@@ -6,35 +6,114 @@
 .contact-left{
     width: 40%;
     color: #0d0d25;
-    /* margin: 5vw; */
     padding: 2vw 0;
 
 
 }
 .contact-left ion-icon{
     color: #0d0d25;
+    padding: 5px;
 }
 .contact-left div{
-    margin: 6vw 5.5vw;
     display: flex;
+    margin: 20px;
 }
 .contact-divs{
     display: flex;
     width: 100%;
     background-color: white;
+    padding: 5vh 5vw;
 
+}
+.contact-form{
+    /* padding: 20px; */
+    background-color: gray;
+    width: 60vw;
+    min-width: 40vw;
+    height: 55vh;
+    background: linear-gradient(to bottom right, #95B590, #868698);
+    border-radius: 10px;
+}
 
+.contact-form:hover{
+    background: linear-gradient(to bottom right, #868698,#95B590);
+    
+}
+.top-form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30%;
+    gap: 10%;
+    /* margin: 5vh; */
+}
+.message-div{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    /* margin: 5vh; */
+    gap: 5vh;
+
+}
+.message-div button{
+    height: 6vh;
+    width: 8vw;
+    border-radius: 10px;
+    background: linear-gradient(to bottom right, #17173f, #535766);
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+
+}
+.contact-form1{
+    height: 100%;
+}
+
+.input-name,.input-email{
+    width: 40%;
+    height: 8vh;
+    border-radius: 10px;
+    border: none;
+    padding: 2vh;
+}
+.input-message{
+    width: 90%;
+    height: 25vh;
+    border-radius: 10px;
+    border: none;
+    padding: 2vh;
+    
+    
 }
 
 @media (max-width:600px){
     .contact-divs{
         flex-direction: column;
         padding: 8vw;
+        height: 65vh;
+        
     }
     .contact-left{
         width: 100%;
     }
-    .map{
+    .contact-form{
         width: 100%;
+        height: 50vh;
+    }
+    .contact-form button{
+        width: 20vw;
+    }
+    .contact-form input{
+        height: 5vh;
+        margin: 0;
+    }
+    .contact-form textarea{
+        height: 15vh;
+        margin: 0;
     }
 }

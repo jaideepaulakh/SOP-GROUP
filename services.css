@@ -1,0 +1,48 @@
+.services-section{
+    background-color: white;
+    color: #17173f;
+    display: flex;
+    padding: 10vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-left{
+    width: 30vw;
+}
+.services-left h2{
+    margin: 2vh;
+}
+.services-left h4{
+    margin: 2vh;
+    font-weight: 400;
+    color: gray;
+}
+.services-right{
+    display: flex;
+
+}
+.services-right h6{
+    font-size: 2vh;
+}
+
+@media (max-width:600px){
+    .services-section{
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+    }
+    .services-left{
+        width: 100%;
+        margin: 0;
+    }
+    .services-right{
+        width: 100%;
+        margin: 0;
+        flex-direction: column;
+    }
+    .services-right1 div, .services-right2 div{
+        margin-bottom: 1vh;
+    }
+}
+

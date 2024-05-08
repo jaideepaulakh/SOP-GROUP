@@ -20,7 +20,7 @@
         <header>
             <div class="container-top">
                 <div class="header-div">
-                    <div class="logo-div"><a href="index.html"><img src="img/logo.png" alt="logo"></a></div>
+                    <div class="logo-div"><a href="index.html"><img src="img/logo-main.png" alt="logo"></a></div>
                     <div class="nav-div">
                         <div class="menu-icon-container ">
                             <div class="menu-icon">
@@ -50,6 +50,7 @@
           
             <div class="contact-divs" id="">
                 <div class="contact-left">
+                    <div><h1>Get in touch</h1></div>
                     <div class="phone-footer">
                         <ion-icon name="call-outline"></ion-icon>
                         <h4>+1 (613) 355-0007/+1 (437) 772-9559</h4>
@@ -63,10 +64,21 @@
                         <h4>sopgroup</h4>
                     </div>
                 </div>
-                <div class="map">
-                    <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184531.69394825035!2d-79.75954390000001!3d43.724934000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b15eaa5d05abf%3A0x352d31667cc38677!2sBrampton%2C%20ON%2C%20Canada!5e0!3m2!1sen!2sin!4v1714537023442!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+                <div class="contact-form">
+                    <form class="contact-form1" action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="6b9ddf71-8fd1-4173-9585-6b782ec7d121">
+                        <input style="display: none;" name="FORM TYPE" type="text" value="CONTACT FORM">
+                            <div class="top-form">
+                                <input name="Name" class="input-name" type="text" placeholder="  Name*" required>
+                                <input name="E-mail" class="input-email" type="email" placeholder="  E-mail*" required>
+                            </div>
+                            
+                            <div class="message-div">
+                                <textarea name="Message" class="input-message" name="" id="" placeholder="  Message*" required></textarea>
+                                <button type="submit">Submit</button>
+                            </div>
+                            
+                    </form>
                 </div>
             </div>
         </section>
@@ -76,7 +88,7 @@
                 <div class="footer">
                     <div class="footer-sections footer-social">
                         <h4>Social</h4>
-                        <h6>Follow us!</h6>
+                        <h6>Follow us!</h6> 
                         <div>
                             <a href="https://www.facebook.com/sopgroupofcompanies/"><ion-icon name="logo-facebook"></ion-icon></a>
                             <a href="https://www.instagram.com/sopgroup/"><ion-icon name="logo-instagram"></ion-icon></a>

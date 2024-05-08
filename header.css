@@ -58,7 +58,7 @@ header{
     text-decoration: none;
     /* position: relative; */
     color: #282D43;
-    text-shadow: 1px 1px 1px white;
+    /* text-shadow: 1px 1px 1px white; */
 }
 .nav-div ion-icon{
     font-size: 45px;

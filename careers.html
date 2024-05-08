@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="careers.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -47,7 +48,87 @@
                 <h6>SOP Group > <span style="color: grey;">Careers</span></h6>
             </div>
         </section>
+        <div class="driver-form-div">
+            <form class="driver-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6b9ddf71-8fd1-4173-9585-6b782ec7d121">
+                <input style="display: none;" name="FORM TYPE" type="text" value="DRIVER FORM">
+                <h1>Driver Application Form</h1>
+                <div class="driver-form1">
+                <div>
+                    <label for="">Full Name*</label>
+                    <input required name="Full Name" type="text">
+                </div>
+                
+                <div>
+                    <label for="">E-mail*</label>
+                    <input required name="E-mail" type="email">
+                </div>
+                
+                <div>
+                    <label for="">Phone Number*</label>
+                    <input required name="Phone Number" type="text">
+                </div>
+                
+                <div>
+                    <label for="">Country of Residence*</label>
+                    <select required class="form-dropdown" name="Country">
+                        <option value="Not Selected">Please Select</option>
+                        <option value="Canada">Canada</option>
+                        <option value="United States">United States</option>
+                        <option value="Other">Other</option>
+                  </select>
+                </div>
+                
+                <div>
+                    <label for="">Your Province*</label>
+                    <input name="Province" type="text">
+                </div>
+                
+                <div>
+                    <label for="">Class of Lisence*</label>
+                    <select required class="form-dropdown" name="Lisence" id="">
+                        <option value="Not Selected">Please Select</option>
+                        <option value="AZ">AZ</option>
+                        <option value="Class 1">Class 1</option>
+                        <option value="International Only">International Only</option>
+                 </select>
+                </div>
+                
+                <div>
+                    <label for="">Eligibility to work in Canada*</label>
+                    <select class="form-dropdown" name="Eligibility to work in Canada" id="">
+                        <option value="Not Selected">Please Select</option>
+                        <option value="I have a Canadian Passport">I have a Canadian Passport</option>
+                        <option value="I have a Work Permit">I have a Work Permit</option>
+                        <option value="I have a Permanent Residence (PR) Card">I have a Permanent Residence (PR) Card</option>
+                 </select>
+                </div>
+                 
+                <div>
+                    <label for="">Years of Tractor Trailer Driving Experience*</label>
+                    <select class="form-dropdown" name="Years of Experience" id="">
+                        <option value="Not Selected">Please Select</option>
+                        <option value="Less than 6 months">Less than 6 months</option>
+                        <option value="1-2 years">1-2 years</option>
+                        <option value="2-3 years">2-3 years</option>
+                        <option value="3-4 years">3-4 years</option>
+                        <option value="5+ years">5+ years</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="">Are you eligible and willing to drive to the United States?*</label>
+                    <select class="form-dropdown" name="Eligibility to drive to U.S" id="">
+                        <option value="">Please Select</option>
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </div>
+                <button type="submit">Submit</button>
+                </div>
+            </form>
 
+        </div>
         <footer>
             <div class="footer-container">
                 <div class="footer">

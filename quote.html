@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="header.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="quote.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -39,7 +40,7 @@
             </div>
         </header>
         <div class="page-title">
-            <h1>SERVICES</h1>
+            <h1>REQUEST A QUOTE</h1>
         </div>
     </div>
         <section>
@@ -47,7 +48,25 @@
                 <h6>SOP Group > <span style="color: grey;">Request quote</span></h6>
             </div>
         </section>
-
+        <div class="quote-form-div">
+            <form class="quote-form" action="https://api.web3forms.com/submit" method="POST">
+                <input type="hidden" name="access_key" value="6b9ddf71-8fd1-4173-9585-6b782ec7d121">
+                <input style="display: none;" name="FORM TYPE" type="text" value="QUOTE REQUEST FORM">
+                <h2>REQUEST A QUOTE</h2>
+                <div class="quote-form1">
+                    <div>
+                        <input required placeholder="Name" name="Name" type="text">
+                        <input required placeholder="Phone Number" name="Phone Number" type="text">
+                        <input required placeholder="E-mail" name="E-mail" type="text">
+                    </div>
+                    <div>
+                        <input required placeholder="Services Required" name="Services Required" type="text">
+                        <textarea required placeholder="Details" name="Details" id=""></textarea>
+                    </div>
+                </div>
+                <div class="quote-button"><button type="submit">Submit</button></div>
+            </form>
+        </div>
         <footer>
             <div class="footer-container">
                 <div class="footer">
